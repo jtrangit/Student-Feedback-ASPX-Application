@@ -1,95 +1,76 @@
-<h1>Student Feedback Form</h1>
+# Student Feedback Form
 
-    <p>This is a simple web-based feedback form designed to collect students' evaluations of a course and its instructor. The form allows for the anonymous submission of structured responses using radio buttons across a series of standardized questions.</p>
+This is a simple web-based feedback form designed to collect students' evaluations of a course and its instructor. The form allows for the anonymous submission of structured responses using radio buttons across a series of standardized questions.
 
-    <h2>📝 Overview</h2>
-    <p>The <strong>Student Feedback Form</strong> allows students to:</p>
-    <ul>
-        <li>Enter their name and student ID</li>
-        <li>Select the course they wish to provide feedback on</li>
-        <li>Answer 20 multiple-choice questions using radio buttons</li>
-        <li>Submit their completed survey via a standard form POST action to <code>survey.aspx</code></li>
-    </ul>
+---
 
-    <h2>📋 Form Structure</h2>
+## 📝 Overview
 
-    <h3>1. Student Details</h3>
-    <ul>
-        <li><strong>Student Name</strong> (text input)</li>
-        <li><strong>Student ID</strong> (text input)</li>
-    </ul>
+The **Student Feedback Form** allows students to:
 
-    <h3>2. Course Selection</h3>
-    <p>A dropdown menu to select one of the following courses:</p>
-    <ul>
-        <li>Cooking 101</li>
-        <li>Intro To Tax Evasion</li>
-        <li>History Of Spoons</li>
-        <li>Component Based Medieval Siege Weapon Design (default selected)</li>
-    </ul>
+- Enter their name and student ID  
+- Select the course they wish to provide feedback on  
+- Answer 20 multiple-choice questions using radio buttons  
+- Submit their completed survey via a standard form POST action to `survey.aspx`
 
-    <h3>3. Feedback Sections</h3>
-    <p>Each question allows for a single choice from:</p>
-    <ul>
-        <li>Strongly Agree</li>
-        <li>Agree</li>
-        <li>Neutral <em>(default)</em></li>
-        <li>Disagree</li>
-        <li>Strongly Disagree</li>
-    </ul>
+---
 
-    <h4>Course Feedback Topics</h4>
-    <ol>
-        <li>Interest in course subject</li>
-        <li>Learning outcomes</li>
-        <li>Preparedness for assignments</li>
-        <li>Preparedness for tests</li>
-        <li>Fair accommodations</li>
-        <li>Assignment timing</li>
-        <li>Reasonableness of workload</li>
-        <li>Class stress level</li>
-        <li>Learning resources</li>
-        <li>Overall course difficulty</li>
-        <li>Willingness to recommend</li>
-        <li>Satisfaction with grading</li>
-    </ol>
+## 📋 Form Structure
 
-    <h4>Professor Feedback Topics</h4>
-    <ol start="13">
-        <li>Preparedness</li>
-        <li>Willingness to answer questions</li>
-        <li>Approachability</li>
-        <li>Respect for students' time</li>
-        <li>Helpfulness in understanding material</li>
-        <li>Comfort in expressing opinions</li>
-        <li>Teaching effectiveness</li>
-        <li>Continuation recommendation</li>
-    </ol>
+### 1. Student Details
 
-    <h3>4. Submission</h3>
-    <p>A simple submit button sends the form data to <code>survey.aspx</code> via POST.</p>
+- **Student Name** (text input)  
+- **Student ID** (text input)
 
-    <h2>📦 File Structure</h2>
-    <div class="code-block">
-        student-feedback-form/<br>
-        ├── index.html &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Main HTML file for the form<br>
-        ├── survey.css &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# (Optional) External CSS file for styling<br>
-        └── survey.aspx &nbsp;&nbsp;&nbsp;&nbsp;# (Placeholder) Backend handler for form submissions
-    </div>
+### 2. Course Selection
 
-    <h2>🔧 Customization Notes</h2>
-    <ul>
-        <li>Add your own backend logic in <code>survey.aspx</code> to process and store submitted data.</li>
-        <li>Validate and sanitize inputs for security.</li>
-        <li>Add JavaScript for improved UX (form validation, progress indicators, etc.)</li>
-        <li>Ensure accessibility by linking <code>&lt;label&gt;</code> tags properly and supporting keyboard navigation.</li>
-    </ul>
+A dropdown menu to select one of the following courses:
 
-    <h2>⚠️ Known Issues</h2>
-    <ul>
-        <li>All <code>&lt;label&gt;</code> elements reference the same <code>id</code> values (e.g., <code>strongAgree</code>) across questions. This violates HTML ID uniqueness.</li>
-        <li>Use unique IDs per question to ensure accessibility and proper label binding.</li>
-    </ul>
+- Cooking 101  
+- Intro To Tax Evasion  
+- History Of Spoons  
+- Component Based Medieval Siege Weapon Design *(default selected)*
 
-    <h2>📄 License</h2>
-    <p>This project is open for educational and personal use. Attribution appreciated but not required.</p>
+### 3. Feedback Sections
+
+Each question allows for a single choice from:
+
+- Strongly Agree  
+- Agree  
+- Neutral *(default)*  
+- Disagree  
+- Strongly Disagree  
+
+#### Course Feedback Topics
+
+1. Interest in course subject  
+2. Learning outcomes  
+3. Preparedness for assignments  
+4. Preparedness for tests  
+5. Fair accommodations  
+6. Assignment timing  
+7. Reasonableness of workload  
+8. Class stress level  
+9. Learning resources  
+10. Overall course difficulty  
+11. Willingness to recommend  
+12. Satisfaction with grading  
+
+#### Professor Feedback Topics
+
+13. Preparedness  
+14. Willingness to answer questions  
+15. Approachability  
+16. Respect for students' time  
+17. Helpfulness in understanding material  
+18. Comfort in expressing opinions  
+19. Teaching effectiveness  
+20. Continuation recommendation  
+
+### 4. Submission
+
+A simple submit button sends the form data to `survey.aspx` via POST.
+
+Johnny Tran
+267-423-6148
+johnnytran.work@gmail.com
