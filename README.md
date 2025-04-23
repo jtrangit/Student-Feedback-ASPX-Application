@@ -71,6 +71,6 @@ Each question allows for a single choice from:
 
 A simple submit button sends the form data to `survey.aspx` via POST.
 
-Johnny Tran
-267-423-6148
+Johnny Tran <br>
+267-423-6148 <br>
 johnnytran.work@gmail.com
