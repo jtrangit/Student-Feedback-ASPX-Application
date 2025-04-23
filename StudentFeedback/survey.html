@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="survey.css" rel="stylesheet" type="text/css" />
+    <title>Student Feedback Form</title>
+</head>
+<body>
+    <form id="frmSurvey" method="post" action="survey.aspx">
+
+        <h1>Student Feedback Form</h1>
+        <h2>
+            Student Name: <input type="text" id="txtStudentName" name="txtStudentName" size="50" /> <br /> <!--Student Name-->
+        </h2>
+
+        <h2>
+            Student ID: <input type="text" id="txtStudentID" name="txtStudentID" size="50" /> <br /> <!--Student ID-->
+        </h2>
+
+        <!--Selected Course-->
+        <h2>
+            Select a course to provide feedback on:
+            <select id="txtCourses" name="txtCourses">
+                <option value="Cooking 101">Cooking 101</option>
+                <option value="Intro To Tax Evasion">Intro To Tax Evasion</option>
+                <option value="History Of Spoons">History Of Spoons</option>
+                <option value="Component Based Medieval Siege Weapon Design" selected>Component Based Medieval Siege Weapon Design</option>
+            </select>
+        </h2>
+
+
+        <div class="questions">
+            <h2>Please select the choice that best fits your opinion about the course for each statement.</h2>
+
+            <div class="radio">
+                <!--Question 1-->
+                <p>You were interested in the course subject.</p>
+                <input type="radio" id="strongAgree" name="subjectSatisfaction" value="Strongly Agree" />
+                <label for="subjectSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="subjectSatisfaction" value="Agree" />
+                <label for="subjectSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="subjectSatisfaction" value="Neutral" checked />
+                <label for="subjectSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="subjectSatisfaction" value="Disagree" />
+                <label for="subjectSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="subjectSatisfaction" value="Strongly Disagree" />
+                <label for="subjectSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 2-->
+                <p>You think you learned a lot from this course.</p>
+                <input type="radio" id="strongAgree" name="learningSatisfaction" value="Strongly Agree" />
+                <label for="learningSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="learningSatisfaction" value="Agree" />
+                <label for="learningSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="learningSatisfaction" value="Neutral" checked />
+                <label for="learningSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="learningSatisfaction" value="Disagree" />
+                <label for="learningSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="learningSatisfaction" value="Strongly Disagree" />
+                <label for="learningSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 3-->
+                <p>You felt prepared to do the assignments in this course.</p>
+                <input type="radio" id="strongAgree" name="assignmentSatisfaction" value="Strongly Agree" />
+                <label for="assignmentSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="assignmentSatisfaction" value="Agree" />
+                <label for="assignmentSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="assignmentSatisfaction" value="Neutral" checked />
+                <label for="assignmentSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="assignmentSatisfaction" value="Disagree" />
+                <label for="assignmentSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="assignmentSatisfaction" value="Strongly Disagree" />
+                <label for="assignmentSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 4-->
+                <p>You felt prepared for the quizzes, exams, and tests in this course.</p>
+                <input type="radio" id="strongAgree" name="testSatisfaction" value="Strongly Agree" />
+                <label for="testSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="testSatisfaction" value="Agree" />
+                <label for="testSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="testSatisfaction" value="Neutral" checked />
+                <label for="testSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="testSatisfaction" value="Disagree" />
+                <label for="testSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="testSatisfaction" value="Strongly Disagree" />
+                <label for="testSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 5-->
+                <p>You feel like you were accomodatedly fairly in this course.</p>
+                <input type="radio" id="strongAgree" name="accomodatationSatisfaction" value="Strongly Agree" />
+                <label for="accomodatationSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="accomodatationSatisfaction" value="Agree" />
+                <label for="accomodatationSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="accomodatationSatisfaction" value="Neutral" checked />
+                <label for="accomodatationSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="accomodatationSatisfaction" value="Disagree" />
+                <label for="accomodatationSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="accomodatationSatisfaction" value="Strongly Disagree" />
+                <label for="accomodatationSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 6-->
+                <p>You felt like you had enough time to finish and turn in assignments on time.</p>
+                <input type="radio" id="strongAgree" name="assignmentTimeSatisfaction" value="Strongly Agree" />
+                <label for="assignmentTimeSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="assignmentTimeSatisfaction" value="Agree" />
+                <label for="assignmentTimeSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="assignmentTimeSatisfaction" value="Neutral" checked />
+                <label for="assignmentTimeSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="assignmentTimeSatisfaction" value="Disagree" />
+                <label for="assignmentTimeSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="assignmentTimeSatisfaction" value="Strongly Disagree" />
+                <label for="assignmentTimeSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 7-->
+                <p>You felt the time required of you to work and study outside of class was fair and reasonable.</p>
+                <input type="radio" id="strongAgree" name="outsideClassSatisfaction" value="Strongly Agree" />
+                <label for="outsideClassSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="outsideClassSatisfaction" value="Agree" />
+                <label for="outsideClassSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="outsideClassSatisfaction" value="Neutral" checked />
+                <label for="outsideClassSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="outsideClassSatisfaction" value="Disagree" />
+                <label for="outsideClassSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="outsideClassSatisfaction" value="Strongly Disagree" />
+                <label for="outsideClassSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 8-->
+                <p>You felt the class was more stressful than it should have been.</p>
+                <input type="radio" id="strongAgree" name="stressSatisfaction" value="Strongly Agree" />
+                <label for="stressSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="stressSatisfaction" value="Agree" />
+                <label for="stressSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="stressSatisfaction" value="Neutral" checked />
+                <label for="stressSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="stressSatisfaction" value="Disagree" />
+                <label for="stressSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="stressSatisfaction" value="Strongly Disagree" />
+                <label for="stressSatisfaction">Strongly Disagree</label>
+
+            </div>
+
+            <div class="radio">
+                <!--Question 9-->
+                <p>You felt like the course provided enough resources to help you learn.</p>
+                <input type="radio" id="strongAgree" name="resourceSatisfaction" value="Strongly Agree" />
+                <label for="resourceSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="resourceSatisfaction" value="Agree" />
+                <label for="resourceSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="resourceSatisfaction" value="Neutral" checked />
+                <label for="resourceSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="resourceSatisfaction" value="Disagree" />
+                <label for="resourceSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="resourceSatisfaction" value="Strongly Disagree" />
+                <label for="resourceSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 10-->
+                <p>You think the course was too hard overall.</p>
+                <input type="radio" id="strongAgree" name="difficultySatisfaction" value="Strongly Agree" />
+                <label for="difficultySatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="difficultySatisfaction" value="Agree" />
+                <label for="difficultySatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="difficultySatisfaction" value="Neutral" checked />
+                <label for="difficultySatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="difficultySatisfaction" value="Disagree" />
+                <label for="difficultySatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="difficultySatisfaction" value="Strongly Disagree" />
+                <label for="difficultySatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 11-->
+                <p>You would recommend this course to someone else.</p>
+                <input type="radio" id="strongAgree" name="recommendSatisfaction" value="Strongly Agree" />
+                <label for="recommendSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="recommendSatisfaction" value="Agree" />
+                <label for="recommendSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="recommendSatisfaction" value="Neutral" checked />
+                <label for="recommendSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="recommendSatisfaction" value="Disagree" />
+                <label for="recommendSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="recommendSatisfaction" value="Strongly Disagree" />
+                <label for="recommendSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 12-->
+                <p>You were satisfied with how this course was graded.</p>
+                <input type="radio" id="strongAgree" name="gradingSatisfaction" value="Strongly Agree" />
+                <label for="gradingSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="gradingSatisfaction" value="Agree" />
+                <label for="gradingSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="gradingSatisfaction" value="Neutral" checked />
+                <label for="gradingSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="gradingSatisfaction" value="Disagree" />
+                <label for="gradingSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="gradingSatisfaction" value="Strongly Disagree" />
+                <label for="gradingSatisfaction">Strongly Disagree</label>
+
+                
+            </div>
+
+                <h2>Please select the choice that best fits your opinion about the professor of the course for each statement.</h2>
+            
+            <div class="radio">
+                <!--Question 13-->
+                <p>The professor was prepared and ready to teach the course.</p>
+                <input type="radio" id="strongAgree" name="profPreparedSatisfaction" value="Strongly Agree" />
+                <label for="profPreparedSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="profPreparedSatisfaction" value="Agree" />
+                <label for="profPreparedSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="profPreparedSatisfaction" value="Neutral" checked />
+                <label for="profPreparedSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="profPreparedSatisfaction" value="Disagree" />
+                <label for="profPreparedSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="profPreparedSatisfaction" value="Strongly Disagree" />
+                <label for="profPreparedSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 14-->
+                <p>The professor was willing to answer questions during and outside of class.</p>
+                <input type="radio" id="strongAgree" name="profQuestionsSatisfaction" value="Strongly Agree" />
+                <label for="profQuestionsSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="profQuestionsSatisfaction" value="Agree" />
+                <label for="profQuestionsSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="profQuestionsSatisfaction" value="Neutral" checked />
+                <label for="profQuestionsSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="profQuestionsSatisfaction" value="Disagree" />
+                <label for="profQuestionsSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="profQuestionsSatisfaction" value="Strongly Disagree" />
+                <label for="profQuestionsSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 15-->
+                <p>The professor was someone you could ask for help.</p>
+                <input type="radio" id="strongAgree" name="profHelpSatisfaction" value="Strongly Agree" />
+                <label for="profHelpSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="profHelpSatisfaction" value="Agree" />
+                <label for="profHelpSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="profHelpSatisfaction" value="Neutral" checked />
+                <label for="profHelpSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="profHelpSatisfaction" value="Disagree" />
+                <label for="profHelpSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="profHelpSatisfaction" value="Strongly Disagree" />
+                <label for="profHelpSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 16-->
+                <p>The professor respects my time.</p>
+                <input type="radio" id="strongAgree" name="profTimeSatisfaction" value="Strongly Agree" />
+                <label for="profTimeSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="profTimeSatisfaction" value="Agree" />
+                <label for="profTimeSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="profTimeSatisfaction" value="Neutral" checked />
+                <label for="profTimeSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="profTimeSatisfaction" value="Disagree" />
+                <label for="profTimeSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="profTimeSatisfaction" value="Strongly Disagree" />
+                <label for="profTimeSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 17-->
+                <p>The professor was helpful to your understanding of the course material.</p>
+                <input type="radio" id="strongAgree" name="profUnderstandingSatisfaction" value="Strongly Agree" />
+                <label for="profUnderstandingSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="profUnderstandingSatisfaction" value="Agree" />
+                <label for="profUnderstandingSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="profUnderstandingSatisfaction" value="Neutral" checked />
+                <label for="profUnderstandingSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="profUnderstandingSatisfaction" value="Disagree" />
+                <label for="profUnderstandingSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="profUnderstandingSatisfaction" value="Strongly Disagree" />
+                <label for="profUnderstandingSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 18-->
+                <p>You felt safe to speak your opinion to the professor.</p>
+                <input type="radio" id="strongAgree" name="profOpinionSatisfaction" value="Strongly Agree" />
+                <label for="profOpinionSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="profOpinionSatisfaction" value="Agree" />
+                <label for="profOpinionSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="profOpinionSatisfaction" value="Neutral" checked />
+                <label for="profOpinionSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="profOpinionSatisfaction" value="Disagree" />
+                <label for="profOpinionSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="profOpinionSatisfaction" value="Strongly Disagree" />
+                <label for="profOpinionSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 19-->
+                <p>You think the professor did well teaching the course.</p>
+                <input type="radio" id="strongAgree" name="profTeachingSatisfaction" value="Strongly Agree" />
+                <label for="profTeachingSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="profTeachingSatisfaction" value="Agree" />
+                <label for="profTeachingSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="profTeachingSatisfaction" value="Neutral" checked />
+                <label for="profTeachingSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="profTeachingSatisfaction" value="Disagree" />
+                <label for="profTeachingSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="profTeachingSatisfaction" value="Strongly Disagree" />
+                <label for="profTeachingSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="radio">
+                <!--Question 20-->
+                <p>You think the professor should continue teaching this course.</p>
+                <input type="radio" id="strongAgree" name="profContinueSatisfaction" value="Strongly Agree" />
+                <label for="profContinueSatisfaction">Strongly Agree</label>
+
+                <input type="radio" id="agree" name="profContinueSatisfaction" value="Agree" />
+                <label for="profContinueSatisfaction">Agree</label>
+
+                <input type="radio" id="neutral" name="profContinueSatisfaction" value="Neutral" checked />
+                <label for="profContinueSatisfaction">Neutral</label>
+
+                <input type="radio" id="disagree" name="profContinueSatisfaction" value="Disagree" />
+                <label for="profContinueSatisfaction">Disagree</label>
+
+                <input type="radio" id="strongDisagree" name="profContinueSatisfaction" value="Strongly Disagree" />
+                <label for="profContinueSatisfaction">Strongly Disagree</label>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit" />
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>

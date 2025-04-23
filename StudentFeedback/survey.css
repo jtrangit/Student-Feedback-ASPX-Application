@@ -1,0 +1,36 @@
+﻿body {
+    color: white;
+    background-color: #2E51A2;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.studentInfo {
+    color: red;
+}
+
+.questions {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.questions p {
+    font-size: 30px;
+}
+
+.questions .radio {
+    text-align: center;
+    border: solid white 2px;
+    height: 200px;
+    width: 800px;
+    border-radius: 30px;
+}
